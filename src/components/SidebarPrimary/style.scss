@@ -1,0 +1,54 @@
+@import '../../styles/variables/colors';
+
+.sidebar {
+  height: 100vh;
+  position: absolute;
+  width: 75%;
+  background: #f8f8f8;
+  .avatar {
+    position: absolute;
+    top: 135px;
+    .title2 {
+      text-align: center;
+    }
+    .description {
+      padding: 0px 50px;
+      text-align: center;
+      color: gray;
+    }
+  }
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .connection {
+      text-align: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      .btn {
+        width: 75%;
+        p {
+          margin-top: 10px;
+        }
+        span {
+          display: flex;
+          gap: 10px;
+          background: $theme-primary;
+          justify-content: center;
+          border-radius: 5px;
+          padding: 5px 10px;
+          .title4 {
+            color: $white;
+          }
+          .anticon {
+            font-size: 25px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

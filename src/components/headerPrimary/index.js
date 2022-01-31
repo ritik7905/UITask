@@ -6,7 +6,7 @@ import "./style.scss";
 
 const HeaderPrimary = () => {
   return (
-    <div>
+    <div className="header-primary">
       <Row>
         <Col sm={6}>
           <img src={require("../../assets/logo/logo_1.png")} alt="" />
