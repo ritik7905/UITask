@@ -11,24 +11,26 @@
     .anticon {
       font-size: 30px;
       color: $gray-8;
+      cursor: pointer;
     }
   }
   .bell_icon {
     .anticon {
       font-size: 30px;
+      cursor: pointer;
       color: $theme-primary;
     }
   }
-  .left {
+  .right {
     display: flex;
     align-items: center;
     gap: 20px;
     .title1 {
       color: $gray-1;
       font-weight: 400;
-      font-size: 27px;
+      font-size: 20px;
       .anticon {
-        font-size: 20px;
+        font-size: 12px;
       }
     }
   }

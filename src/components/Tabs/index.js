@@ -5,6 +5,8 @@ import {
   UsergroupDeleteOutlined,
   VideoCameraOutlined,
 } from "@ant-design/icons";
+import GroupData from "../Groups";
+
 const { TabPane } = Tabs;
 
 const Tab = (props) => {
@@ -27,7 +29,7 @@ const Tab = (props) => {
           }
           key="1"
         >
-          Tab 1
+          <GroupData text="Hello, I am group section!" />
         </TabPane>
         <TabPane
           tab={
@@ -38,7 +40,7 @@ const Tab = (props) => {
           }
           key="2"
         >
-          Tab 2
+          <GroupData text="Hello, I am Message section!" />
         </TabPane>
         <TabPane
           tab={
@@ -49,7 +51,7 @@ const Tab = (props) => {
           }
           key="3"
         >
-          Tab 3
+          <GroupData text="Hello, I am Video Calls section!" />
         </TabPane>
       </Tabs>
     </>

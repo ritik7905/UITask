@@ -11,7 +11,7 @@
     height: 100vh;
     position: absolute;
     z-index: -1;
-    display: flex;
+    display: none;
     justify-content: center;
     top: 0;
     width: 15%;
@@ -19,7 +19,7 @@
     .avatar {
       position: absolute;
       top: 135px;
-      .title2{
+      .title2 {
         text-align: center;
       }
       .description {
@@ -28,7 +28,7 @@
         color: gray;
       }
     }
-    .bottom{
+    .bottom {
       position: absolute;
       bottom: 85px;
     }
@@ -39,19 +39,17 @@
       height: 70px;
       img {
         height: 100%;
+        padding: 10px 0;
       }
-
-      .ant-tabs-nav-list {
-        .ant-tabs-tab {
-          padding: 0;
-          font-size: 25px;
+    }
+    .ant-tabs-nav-list {
+      .ant-tabs-tab {
+        padding: 0;
+        font-size: 21px;
+        color: $gray-b;
+        cursor: pointer;
+        span {
           color: $gray-b;
-        }
-        .ant-tabs-tab:hover {
-          color: rgb(0, 0, 0);
-        }
-        .ant-tabs-tab-active {
-          color: rgb(0, 0, 0);
         }
       }
     }
@@ -59,17 +57,26 @@
       height: 70px;
       justify-content: center;
     }
-    .ant-tabs-nav {
-      &::before {
-        border-bottom: none;
-      }
-    }
+
     .ant-tabs-content-holder {
       .ant-tabs-content {
         z-index: 555;
         justify-content: center;
-        // position: fixed;
       }
     }
   }
+}
+.ant-tabs-tab-active {
+  // color: $theme-primary !important;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.ant-tabs-ink-bar {
+  background: $theme-primary !important;
+  height: 3px;
+  border-radius: 5px;
+}
+
+.ant-tabs-tab-btn {
+  color: $theme-primary !important;
 }

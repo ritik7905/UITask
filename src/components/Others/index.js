@@ -6,19 +6,20 @@ import {
   DownOutlined,
 } from "@ant-design/icons";
 import { Avatar, Dropdown, Menu } from "antd";
-
+import { Link } from "react-router-dom";
+//==============Style===============////////////
 import "./style.scss";
 const SideInfo = () => {
   const menu = (
     <Menu>
       <Menu.Item>
-        <a>1st menu item</a>
+        <Link to="/">1st menu item</Link>
       </Menu.Item>
       <Menu.Item icon={<DownOutlined />}>
-        <a>2nd menu item</a>
+        <Link to="/">2nd menu item</Link>
       </Menu.Item>
       <Menu.Item>
-        <a>3rd menu item</a>
+        <Link to="/">3rd menu item</Link>
       </Menu.Item>
       <Menu.Item>a danger item</Menu.Item>
     </Menu>
@@ -32,18 +33,19 @@ const SideInfo = () => {
         <div className="bell_icon">
           <BellOutlined />
         </div>
-        <div className="left">
+        <div className="right">
           <div className="avatar">
-            <Avatar size={55} icon={<UserOutlined />} />
+            <Avatar size={35} icon={<UserOutlined />} />
           </div>
           <div className="lists">
             <Dropdown overlay={menu}>
-              <a
+              <Link
+                to="/"
                 className="ant-dropdown-link title1"
                 onClick={(e) => e.preventDefault()}
               >
                 Ritik Sharma <DownOutlined />
-              </a>
+              </Link>
             </Dropdown>
           </div>
         </div>
