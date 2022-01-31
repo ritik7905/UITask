@@ -1,0 +1,35 @@
+@import '../../styles/variables/colors';
+.userInfo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  margin-right: 35px;
+  height: 70px;
+  .question {
+    .anticon {
+      font-size: 30px;
+      color: $gray-8;
+    }
+  }
+  .bell_icon {
+    .anticon {
+      font-size: 30px;
+      color: $theme-primary;
+    }
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .title1 {
+      color: $gray-1;
+      font-weight: 400;
+      font-size: 27px;
+      .anticon {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../styles/variables/colors';
+.connection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  h4 {
+    margin-top: 10px;
+  }
+  span {
+    display: flex;
+    gap: 10px;
+    background: $theme-primary;
+    border-radius: 5px;
+    padding: 5px 10px;
+    .title4 {
+      color: $white;
+    }
+    .anticon {
+      font-size: 25px;
+      color: $white;
+    }
+  }
+}
