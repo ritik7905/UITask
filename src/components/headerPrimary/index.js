@@ -1,7 +1,9 @@
 import { Col, Row } from "antd";
 import React from "react";
-import SideInfo from "../Others";
+import { Link } from "react-router-dom";
+import NavActionCard from "../navActionCard";
 import Tab from "../Tabs";
+
 import "./style.scss";
 
 const HeaderPrimary = () => {
@@ -9,13 +11,17 @@ const HeaderPrimary = () => {
     <div className="header-primary">
       <Row>
         <Col sm={6}>
-          <img src={require("../../assets/logo/logo_1.png")} alt="" />
+          <Link to="/">
+            <img src={require("../../assets/logo/logo_1.png")} alt="" />
+          </Link>
         </Col>
-        <Col sm={12}>
-          <Tab text1 = "Groups" text2 = "Messages" text3 = "Video Calls" />
+        <Col sm={10}>
+          <div className="nav-section">
+          <Tab text1="Groups" text2="Messages" text3="Video Calls" />
+          </div>
         </Col>
-        <Col sm={6}>
-          <SideInfo />
+        <Col sm={8}>
+          <NavActionCard />
         </Col>
       </Row>
     </div>

@@ -1,15 +1,12 @@
 import React from "react";
-import {
-  QuestionCircleOutlined,
-  BellOutlined,
-  UserOutlined,
-  DownOutlined,
-} from "@ant-design/icons";
+import { QuestionCircleOutlined, BellOutlined, UserOutlined, DownOutlined } from "@ant-design/icons";
 import { Avatar, Dropdown, Menu } from "antd";
 import { Link } from "react-router-dom";
-//==============Style===============////////////
+
+//Style
 import "./style.scss";
-const SideInfo = () => {
+
+const NavActionCard = () => {
   const menu = (
     <Menu>
       <Menu.Item>
@@ -54,4 +51,4 @@ const SideInfo = () => {
   );
 };
 
-export default SideInfo;
+export default NavActionCard;

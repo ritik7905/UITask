@@ -1,60 +1,23 @@
 import React from "react";
-import { Tabs } from "antd";
+import { Menu } from "antd";
+import { Link } from "react-router-dom";
 import {
-  CommentOutlined,
-  UsergroupDeleteOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
-import GroupData from "../Groups";
+  UserOutlined
+} from '@ant-design/icons';
 
-const { TabPane } = Tabs;
+import "./styles.scss"
+
 
 const Tab = (props) => {
-  function callback(key) {
-    console.log(key);
-  }
 
-  const styles = {
-    color: "#E8887E",
-  };
   return (
-    <>
-      <Tabs defaultActiveKey="2" onChange={callback}>
-        <TabPane
-          tab={
-            <span>
-              <UsergroupDeleteOutlined style={styles} />
-              {props.text1}
-            </span>
-          }
-          key="1"
-        >
-          <GroupData text="Hello, I am group section!" />
-        </TabPane>
-        <TabPane
-          tab={
-            <span>
-              <CommentOutlined style={styles} />
-              {props.text2}
-            </span>
-          }
-          key="2"
-        >
-          <GroupData text="Hello, I am Message section!" />
-        </TabPane>
-        <TabPane
-          tab={
-            <span>
-              <VideoCameraOutlined style={styles} />
-              {props.text3}
-            </span>
-          }
-          key="3"
-        >
-          <GroupData text="Hello, I am Video Calls section!" />
-        </TabPane>
-      </Tabs>
-    </>
+    <div className="header-tab-style">
+      <Menu defaultSelectedKeys={['2']}>
+        <Menu.Item key="1"><Link to="/group"><UserOutlined /> Group</Link></Menu.Item>
+        <Menu.Item key="2"><Link to="/"><UserOutlined /> Messages</Link></Menu.Item>
+        <Menu.Item key="3"><Link to="/call"><UserOutlined /> Video Call</Link></Menu.Item>
+      </Menu>
+    </div>
   );
 };
 

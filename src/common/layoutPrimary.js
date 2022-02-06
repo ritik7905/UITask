@@ -20,7 +20,7 @@ const LayoutPrimary = (props) => {
             <Col sm={6} style={{ padding: "0" }}>
               <SidebarPrimary />
             </Col>
-            <Col sm={20} style={{ padding: "0" }}>
+            <Col sm={18} style={{ padding: "0" }}>
               {props.children}
             </Col>
           </Row>

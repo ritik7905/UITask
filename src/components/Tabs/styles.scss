@@ -1,0 +1,19 @@
+
+@import '../../styles/variables/colors';
+
+// Header tab Style
+.header-tab-style {
+  background-color: red;
+
+
+  .ant-menu {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border: none;
+
+    .ant-menu-item {
+      padding: 0 40px;
+    }
+  }
+}

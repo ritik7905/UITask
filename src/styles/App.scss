@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "antd/dist/antd.css";
 
 // variables
@@ -10,7 +11,7 @@
 
 // custom css
 * {
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 ::selection {
@@ -61,7 +62,12 @@ body {
 }
 
 // Heading Style
-.title1, .title2, .title3, .title4, .title5, .title6 {
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6 {
   font-weight: 500;
   color: $gray-3;
 }
@@ -101,4 +107,31 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $gray-4;
+}
+
+// Header tab Style
+.header-tab-style {
+
+  .ant-tabs-ink-bar-animated {}
+
+  .ant-tabs-nav {
+    height: 70px;
+    margin: 0;
+  }
+
+  .ant-tabs-top>.ant-tabs-nav::before {
+    display: none;
+  }
+}
+
+
+// chat-section-style
+.chat-section-style {
+  background: red;
+  min-height: 100vh;
+  margin-top: 50px;
+}
+
+.ant-layout-header {
+  height: 70px;
 }
