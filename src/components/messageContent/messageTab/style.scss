@@ -1,0 +1,33 @@
+@import "../../../styles/variables/colors";
+
+.message-tab {
+    position: relative;
+    width: 100%;
+
+    .ant-tabs {
+        .ant-tabs-nav-wrap {
+            height: 75px;
+            padding-left: 35px;
+        }
+        .ant-tabs-tab {
+            font-size: 30px;
+            padding: 0 20px;
+            color: $gray-b;
+            &:hover {
+                color: $black;
+            }
+        }
+        .ant-tabs-ink-bar {
+            // color: $theme-primary;
+            border-bottom: 2px solid $theme-primary;
+        }
+    }
+}
+.ant-tabs-tab.ant-tabs-tab-active {
+    .ant-tabs-tab-btn {
+        color: black !important;
+        .anticon {
+            color: $theme-primary;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import MessageContent from "../../components/messageContent";
 
 // Styles
 import "./styles.scss";
@@ -6,7 +7,7 @@ import "./styles.scss";
 const MessageScreen = () => {
   return (
     <div className="home-page-style chat-section-style">
-      <h1>Message Section</h1>
+      <MessageContent />
     </div>
   );
 };

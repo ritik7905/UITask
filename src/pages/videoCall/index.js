@@ -1,9 +1,9 @@
 import React from 'react';
 
-const GroupScreen = () => {
+const VideoCallScreen = () => {
   return <div className='about-page-style chat-section-style'>
-    <h1>Group Section</h1>
+    <h1>LOL</h1>
   </div>
 };
 
-export default GroupScreen;
+export default VideoCallScreen;

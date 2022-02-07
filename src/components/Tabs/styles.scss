@@ -1,10 +1,8 @@
-
 @import '../../styles/variables/colors';
 
 // Header tab Style
 .header-tab-style {
   background-color: red;
-
 
   .ant-menu {
     display: flex;
@@ -12,8 +10,32 @@
     height: 70px;
     border: none;
 
+
     .ant-menu-item {
       padding: 0 40px;
+      margin-bottom: 0;
+    }
+    .ant-menu-item-active{
+      background-color: transparent;
+    }
+    .ant-menu-title-content{
+      color: $gray-e;
+    }
+    .ant-menu-item-selected {
+      margin: 0;
+      color: $theme-primary !important;
+      border-bottom: 3px solid;
+      border-radius: 2px;
+      background-color: transparent !important;
+      a{
+        color: $black;
+      }
+    }
+    a:hover{
+      color: $black;
+    }
+    .ant-menu-vertical {
+      margin-bottom: 0;
     }
   }
 }

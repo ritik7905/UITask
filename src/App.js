@@ -1,5 +1,4 @@
 import AppRouter from './AppRouter';
-import LayoutPrimary from './common/layoutPrimary';
 import './styles/App.scss';
 
 function App() {

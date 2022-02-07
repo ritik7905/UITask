@@ -1,0 +1,26 @@
+@import '../../../styles/variables/colors';
+
+.message-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .page-title {
+    display: flex;
+    align-items: center;
+    .anticon {
+      font-size: 40px;
+      color: $theme-primary;
+    }
+    .title {
+      padding: 0 20px;
+      font-size: 33px;
+      font-weight: 500;
+    }
+  }
+  .expand {
+    .anticon {
+      font-size: 40px;
+      color: $gray-c;
+    }
+  }
+}
