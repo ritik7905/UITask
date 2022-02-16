@@ -1,4 +1,4 @@
-@import '../../styles/variables/colors';
+@import "../../styles/variables/colors";
 
 .sidebar {
   min-height: 100vh;
@@ -62,12 +62,15 @@
       align-items: center;
       margin: 10px 0 20px;
 
-
       a {
         padding: 5px 0;
         color: $black;
         font-size: 14px;
         font-weight: 500;
+        &:first-child {
+          color: $theme-primary;
+          text-shadow: 1px 1px 1px $theme-primary;
+        }
       }
     }
 
@@ -92,7 +95,7 @@
       }
 
       &.active {
-        background: #E7877D;
+        background: #e7877d;
         color: $white;
       }
     }

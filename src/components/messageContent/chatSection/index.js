@@ -7,27 +7,6 @@ import arrayData from './data'
 import './style.scss'
 
 const ChatSection = () => {
-  // JavaScript For toggle Cards
-  document.addEventListener('DOMContentLoaded', function (event) {
-    var element = document.querySelectorAll('.card')
-
-    if (element) {
-      element.forEach(function (el, key) {
-        el.addEventListener('click', function () {
-          console.log(key)
-
-          el.classList.toggle('active')
-
-          element.forEach(function (ell, els) {
-            if (key !== els) {
-              ell.classList.remove('active')
-            }
-            console.log(els)
-          })
-        })
-      })
-    }
-  })
   return (
     <div className="chat-section">
       <div className="sidebar">

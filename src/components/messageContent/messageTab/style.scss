@@ -3,6 +3,9 @@
 .message-tab {
     position: relative;
     width: 100%;
+    .tabs{
+        height: 100%;
+    }
 
     .ant-tabs {
         .ant-tabs-nav-wrap {
@@ -10,7 +13,7 @@
             padding-left: 35px;
         }
         .ant-tabs-tab {
-            font-size: 30px;
+            font-size: 24px;
             padding: 0 20px;
             color: $gray-b;
             &:hover {
@@ -19,7 +22,8 @@
         }
         .ant-tabs-ink-bar {
             // color: $theme-primary;
-            border-bottom: 2px solid $theme-primary;
+            border-bottom: 3px solid $theme-primary;
+            border-radius: 2px;
         }
     }
 }

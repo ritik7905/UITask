@@ -8,6 +8,7 @@
   overflow: hidden;
   border-radius: 30px;
   max-height: 685px;
+  background-color: $white;
   .sidebar {
     color: black;
     padding-top: 0;
@@ -79,8 +80,8 @@
   }
 }
 
-.card.active{
-  background-color: $theme-primary-light;
-  opacity: .5;
-  border-bottom: 2px solid red;
-}
+// .card.active{
+//   background-color: $theme-primary-light;
+//   opacity: .5;
+//   border-bottom: 2px solid red;
+// }

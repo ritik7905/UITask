@@ -112,7 +112,9 @@ body {
 // Header tab Style
 .header-tab-style {
 
-  .ant-tabs-ink-bar-animated {}
+  .ant-menu {
+    align-items: flex-end;
+  }
 
   .ant-tabs-nav {
     height: 70px;
